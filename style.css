@@ -1,0 +1,4 @@
+
+.navigation__title::before {
+    content:"img/main_icon.svg";
+}
