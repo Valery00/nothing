@@ -8,12 +8,7 @@
     min-width: 100%;
     height: 100%;
 }
-.breadcrumps {
 
-}
-.breadcrumps__href {
-
-}
 .breadcrumps__item:not(:last-child)::after {
     content: " /";
 }
@@ -27,4 +22,30 @@
     background-repeat: no-repeat;
     background-position: 50% 50%; */
     background: coral url(../img/main_icon.png) no-repeat center; 
+}
+/* Это нижние иконки подвала */
+.icon__img--vk {
+    background-image: url(../img/vk.png);
+    width: 12px;
+    height: 7px;
+}
+.icon__img--fb {
+    background-image: url(../img/fb.png);
+    width: 6px;
+    height: 13px;
+}
+.icon__img--google {
+    background-image: url(../img/google.png);
+    width: 15px;
+    height: 9px;
+}
+.icon__img--twitter {
+    background-image: url(../img/twitter.png);
+    width: 11px;
+    height: 9px;
+}
+.icon__img--email {
+    background-image: url(../img/mail.png);
+    width: 12px;
+    height: 9px;
 }
