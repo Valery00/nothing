@@ -24,7 +24,7 @@
     background: coral url(../img/main_icon.png) no-repeat center; 
 }
 /* Это нижние иконки подвала */
-.icon__img--vk {
+.social__href-vk {
     background-image: url(../img/vk.png);
     width: 12px;
     height: 7px;
