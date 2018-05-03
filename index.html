@@ -4,54 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="">
     <title>Document</title>
 </head>
 <body>
    <header>
        <div class="conteiner">
            <div class="logo">
-               <img src="img/logo_header.svg"/>
+               <a href="#" target="_blank" title="Перейти на главную страницу">
+                    <img src="img/logo_header.png"/>
+               </a>
             </div>
            <div class="contacts">
-                <div class="phone"> 8 (800) 00-392-10 </div>
+                <div class="phone">
+                    <a href="tel: +8(800)0039210" target="_blank" title="Позвоните нам!"> 8 (800) 00-392-10 </a>
+                </div>
                 <div class="schedule">График работы</div>
             </div>
-           
-       </div>
+        </div>
    </header>
    <main>
        <div class="conteiner">
-            <ul class="navigation">
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link"> 
-                        <div class="navigation__title">Главная</div>
-                        <div class="navigation__icon">
-                            <img src="img/main_icon.svg"/>
-                        </div>
-                    </a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link"> 
-                        <div class="navigation__title">Экипаж</div>
-                        <div class="navigation__icon">
-                            <img src=""/>
-                        </div>
-                        </a>
-                </li>
-                <li class="navigation__item">
-                        <a href="#" class="navigation__link"> 
-                            <div class="navigation__title">Отзывы</div>
-                            <div class="navigation__icon">
-                                <img src=""/>
-                            </div>
+           <nav class="navigation">
+                <ul class="navigation__items">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link navigation__link--airoplan" target="_blank" title="Перейти на главную страницу"> 
+                            <div class="navigation__title">Главная</div>
                         </a>
                     </li>
-            </ul>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link navigation__link--crew" target="_blank" title="Перейти к просмотру экипажа"> 
+                            <div class="navigation__title">Экипаж</div>
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link navigation__link--star" target="_blank" title="Посмотреть отзывы"> 
+                            <div class="navigation__title">Отзывы</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
             <div class="content">
-                <div class="breadcrumbs">
-                    <a href="#">Главная</a> /
-                    <a href="#">Экипаж</a>
-                </div>
+                <nav class="breadcrumps">
+                    <ul class="breadcrumps__items">
+                        <li class="breadcrumps__item">
+                            <a href="#" class="breadcrumps__href" title="Перейти на главную страницу">Главная</a>
+                        </li>
+                        <li class="breadcrumps__item">
+                            <a href="#" class="breadcrumps__href" title="Посмотреть экипаж">Экипаж</a>
+                        </li>
+                    </ul>
+                </nav>
                 <div class="title"> Экипаж </div>
                 <div class="team">
                     <ul class="team__items">
@@ -60,8 +64,10 @@
                                 <img src="img/alex.jpg" class="img">
                             </div>
                             <div class="information">
-                                <div class="name">Белов Алексей Вадимович</div>
-                                <div class="work">Главный пилот</div>
+                                <div class="name-work">
+                                    <div class="name">Белов Алексей Вадимович</div>
+                                    <div class="work">Главный пилот</div>
+                                </div>
                                 <div class="text">
                                     Высокий профессионализм, честь и <br>
                                     отвага - всё это характеристики <br>
@@ -73,7 +79,7 @@
                         </li>
                         <li class="team__item">
                             <div class="team__ava">
-                                ______
+                                <img src="img/inna.jpg" class="img">
                             </div>
                             <div class="information">
                                     <div class="name-work">
@@ -91,6 +97,9 @@
                                         </div>
                         </li>
                         <li class="team__item">
+                                <div class="team__ava">
+                                    <img src="img/boris.jpg" class="img">
+                                </div>
                                 <div class="name-work">
                                     <div class="name">Лещ Борис Анатольевич</div>
                                     <div class="work">Авиатехник</div>
@@ -105,6 +114,9 @@
                                 </div>
                         </li>
                         <li class="team__item">
+                                <div class="team__ava">
+                                    <img src="img/elena.jpg" class="img">
+                                </div>
                                 <div class="name-work">
                                     <div class="name">Дигангидзе Элина Даниловна</div>
                                     <div class="work">Диспетчер</div>
@@ -121,6 +133,9 @@
                                 </div>
                         </li>
                         <li class="team__item">
+                                <div class="team__ava">
+                                    <img src="img/elina.jpg" class="img">
+                                </div>
                                 <div class="name-work">    
                                     <div class="name">Следь Елена Николаевна</div>
                                     <div class="work">Старший бортпроводник</div>
@@ -136,6 +151,9 @@
                                 </div>
                         </li>
                         <li class="team__item">
+                                <div class="team__ava">
+                                    <img src="img/yrii.jpg" class="img">
+                                </div>
                                 <div class="name-work">
                                     <div class="name">Нестеренко Юрий Афанасьевич</div>
                                     <div class="work">Второй пилот</div>
@@ -159,14 +177,17 @@
    </main>
    <footer>
        <div class="conteiner">
-           <div class="avtor">
+           <div class="conteiner__avtor">
                Сделано с любовью и старанием<br>
                на курсе "HTML + CSS" в 
-               <a href="https://loftschool.com/">Loftschool</a><br>
-               Автор работы: Валери Доброскок
+               <a href="https://loftschool.com/" target="_blank" title="Перейти на сайт Loftschool">Loftschool</a><br>
+               Автор работы:
+               <a href="#" target="_blank" title="Перейти на страницу автора"> Валери Доброскок </a>
            </div>
-           <div class="conteiner__logo"></div>
-           <div class="social-networks">
+           <div class="conteiner__logo">
+               <img src="img/logo_header.png">
+           </div>
+           <div class="conteiner__social-networks">
                <div class="social-networks__text">Наши социальные сети</div>
                <div class="icon"></div>
            </div>
