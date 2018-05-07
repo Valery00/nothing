@@ -21,13 +21,16 @@ background-color: #4b73b5;
     line-height: 54px;
 }
 
-.navigation__title {
+.navigation__item {
     font-size: 12px;
     color: #4b73b5;
     letter-spacing: 0.2em;
     line-height: 54px;
 }
-.navigation__title::before {
+.navigation__link--star {
+    color: black;
+}
+.navigation__title--main::before {
     content: "";
     display: block;
     width: 24px;
@@ -36,11 +39,33 @@ background-color: #4b73b5;
     background-repeat: no-repeat;
     background-position: 50% 50%; 
 }
+.navigation__title--team::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 19px;
+    background-image: url(../img/feed_icon.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
+}
+.navigation__title--reviews::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 19px;
+    background-image: url(../img/team_icon.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
 .breadcrumbs {
     font-size: 14px;
     font-style: italic;
     line-height: 18px;
     
+}
+.breadcrumbs__item--main {
+    text-decoration: underline;
+    color: #4b73b5;
 }
 
 /* нужно сделать синий цвет и подчеркивание только для Главная */
@@ -106,30 +131,52 @@ a {
     background: transparent;
     display: block;
 }
+
+
 .href-vk {
     background-image: url(../img/vk.png);
-    width: 12px;
-    height: 7px;
-    overflow:hidden;
+    width: 20px;
+    height: 20px;
     border-radius:50%;
+    background-color: white;
+    background-repeat: no-repeat;
+    Background-position: center;
+    
+    
 }
 .href-fb {
     background-image: url(../img/fb.png);
-    width: 6px;
-    height: 13px;
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    background-color: white;
+    background-repeat: no-repeat;
+    Background-position: center;
 }
 .href-google {
     background-image: url(../img/google.png);
-    width: 15px;
-    height: 9px;
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    background-color: white;
+    background-repeat: no-repeat;
+    Background-position: center;
 }
 .href-twitter {
     background-image: url(../img/twitter.png);
-    width: 11px;
-    height: 9px;
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    background-color: white;
+    background-repeat: no-repeat;
+    Background-position: center;
 }
 .href-email {
     background-image: url(../img/mail.png);
-    width: 12px;
-    height: 9px;
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    background-color: white;
+    background-repeat: no-repeat;
+    Background-position: center;
 }
